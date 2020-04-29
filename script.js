@@ -27,22 +27,24 @@ fetch("http://localhost:8088/food")
                     } else {
                         food.ingredients = "no ingredients listed"
                     }
-
-                    fetch(`https://world.openfoodfacts.org/api/v0/product/${food.barcode}.json`)
-                    .then(response => response.json())
-                    .then(productInfo => {
-                        if (productInfo.product.brands) {
-                            food.brands = productInfo.product.brands
-                        } else {
-                            food.brands = "no brands listed"
-                        }
+                    if (productInfo.product.serving_size) {
+                        food.servingSize = productInfo.product.serving_size
+                    } else {
+                        food.servingSize = "no serving size found"
+                    }
+                    if (productInfo.product.serving_size) {
+                        food.servingSize = productInfo.product.serving_size
+                    } else {
+                        food.servingSize = "no serving size found"
+                    }
+                   console.log(productInfo)
                     document.querySelector(".foodList").innerHTML += `<div><h1>${food.name}</h1>
             <p>${food.category}</p>
             <p>${food.ethnicity}</p>
             <p>${food.barcode}</p>
             <p>${food.ingredients}</p>
-            <p>${food.brands}</p></div>`
-                })
+            <p>${food.servingSize}</p></div>`
+                
         })
     })
 })
