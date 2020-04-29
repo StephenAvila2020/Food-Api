@@ -1,0 +1,17 @@
+.foodList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+
+div{
+    border: 1px solid blue;
+    padding-left: 1em;
+    margin-left: auto;
+    text-align: left;
+    justify-content: space-evenly;
+    align-content: space-between;
+    
+}

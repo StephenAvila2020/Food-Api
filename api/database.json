@@ -1,0 +1,60 @@
+{
+  "food": [
+    {
+      "id": 1,
+      "name": "Linguine",
+      "category": "pasta",
+      "ethnicity": "italian",
+      "barcode": "8001250120076"
+    },
+    {
+      "id": 2,
+      "name": "Massaman curry",
+      "category": "curry",
+      "ethnicity": "thai",
+      "barcode": "3560070976416"
+    },
+    {
+      "id": 3,
+      "name": "Green curry",
+      "category": "curry",
+      "ethnicity": "thai",
+      "barcode": "5021047104419"
+    },
+    {
+      "id": 4,
+      "name": "Ravioli Funghi",
+      "category": "pasta",
+      "ethnicity": "italian",
+      "barcode": "8021733250892"
+    },
+    {
+      "id": 5,
+      "name": "Tuscan Soup",
+      "category": "vegetarian",
+      "ethnicity": "italian",
+      "barcode": "5000169116562"
+    },
+    {
+      "name": "California rolls",
+      "category": "sushi",
+      "ethnicity": "Japanese",
+      "id": 6,
+      "barcode": "4045851002014"
+    },
+    {
+      "name": "City popcorn shrimp",
+      "category": "City seafood",
+      "ethnicity": "City American",
+      "id": 7,
+      "barcode": "0011110963529"
+    },
+    {
+      "name": "City pizza",
+      "category": "City frozen food",
+      "ethnicity": "City italian",
+      "id": 8,
+      "barcode": "0071921377601"
+    }
+  ]
+}
